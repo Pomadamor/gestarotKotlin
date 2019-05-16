@@ -1,13 +1,11 @@
-package com.example.lerna.gestarot
-import android.content.Intent
+package com.example.lerna.gestarot.activity
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
-import android.view.Menu
-import android.view.MenuItem
 import android.widget.EditText
-import com.example.lerna.gestarot.HomeActivity.Companion.USER
-import com.example.lerna.gestarot.HomeActivity.Companion.TYPES_USER
+import com.example.lerna.gestarot.R
+import com.example.lerna.gestarot.activity.HomeActivity.Companion.TYPES_USER
+import com.example.lerna.gestarot.bdd.model.User
 import com.vicpin.krealmextensions.deleteAll
 import com.vicpin.krealmextensions.save
 import kotlinx.android.synthetic.main.activity_connect.*

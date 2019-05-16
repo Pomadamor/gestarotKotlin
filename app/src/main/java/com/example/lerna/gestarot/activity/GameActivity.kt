@@ -1,14 +1,13 @@
-package com.example.lerna.gestarot
+package com.example.lerna.gestarot.activity
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.AttributeSet
-import android.view.ViewGroup
+import android.support.v7.app.AppCompatActivity
 import android.widget.ImageView
 import android.widget.TableLayout
 import android.widget.TableRow
 import android.widget.TextView
-import com.example.lerna.gestarot.HomeActivity.Companion.NBPLAYER
+import com.example.lerna.gestarot.R
+import com.example.lerna.gestarot.activity.HomeActivity.Companion.NBPLAYER
 import kotlinx.android.synthetic.main.activity_game.*
 
 class GameActivity : AppCompatActivity() {

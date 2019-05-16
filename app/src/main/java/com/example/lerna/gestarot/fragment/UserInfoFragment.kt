@@ -1,4 +1,4 @@
-package com.example.lerna.gestarot
+package com.example.lerna.gestarot.fragment
 
 
 import android.os.Bundle
@@ -7,13 +7,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.example.lerna.gestarot.R
 import kotlinx.android.synthetic.main.user_info_fragment.*
 
 class UserInfoFragment() : Fragment() {
 
     companion object {
         const val FUCKTHENAME="fuckthename"
-        fun getFragment(pseudo:String): UserInfoFragment{
+        fun getFragment(pseudo:String): UserInfoFragment {
             var args = Bundle()
             args.putString(FUCKTHENAME, pseudo)
             val fragment = UserInfoFragment()
