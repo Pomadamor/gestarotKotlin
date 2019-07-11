@@ -1,6 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+
+<android.support.constraint.ConstraintLayout
+        android:padding="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Avec quel roi ?"
+                      app:layout_constraintBottom_toTopOf="@+id/roiCoeur"
+                      app:layout_constraintStart_toStartOf="parent"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginBottom="8dp"
+            />
+
+
+            <Button
+                    android:id="@+id/roiCoeur"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/ic_favorite_black_24dp"
+                    android:backgroundTint="#FF0000"
+                    android:text="R"
+                    android:textColor="@color/colorBlancTransparent"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            <Button
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/pique"
+                    android:text="R"
+                    android:textColor="@color/colorBlancTransparent"
+                    app:layout_constraintStart_toEndOf="@+id/roiCoeur"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    android:id="@+id/roiPique"/>
+            <Button
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="32dp"
+                    android:layout_height="31dp"
+                    android:background="@drawable/trefle"
+                    android:text="R"
+                    android:textColor="@color/colorBlancTransparent"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    android:id="@+id/roiTrefle" app:layout_constraintStart_toEndOf="@+id/roiTreCarreau"
+                    android:layout_marginStart="8dp"
+            />
+            <Button
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:layout_width="32dp"
+                    android:layout_height="31dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/ic_arrow_forward_black_24dp"
+                    android:id="@+id/roiTrefle2"
+                    android:backgroundTint="@color/colorBleu"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/roiTrefle3"/>
+            <Button
+                    android:minHeight="0dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:minWidth="0dp"
+                    android:layout_width="32dp"
+                    android:layout_height="31dp"
+                    android:background="@drawable/ic_add_circle_outline_black_24dp"
+                    android:textColor="@color/colorBlancTransparent"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    android:id="@+id/roiTrefle3"
+                    app:layout_constraintVertical_bias="0.489"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:backgroundTint="@color/colorBleu"
+                    app:layout_constraintStart_toEndOf="@+id/roiTrefle" android:layout_marginStart="8dp"/>
+            <Button
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/carreau"
+                    android:backgroundTint="#FF0000"
+                    android:text="R"
+                    android:textColor="@color/colorBlancTransparent"
+
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    android:id="@+id/roiTreCarreau"
+                    app:layout_constraintStart_toEndOf="@+id/roiPique"
+                    android:layout_marginStart="8dp"/>
+
+
+
+
+        </android.support.constraint.ConstraintLayout>

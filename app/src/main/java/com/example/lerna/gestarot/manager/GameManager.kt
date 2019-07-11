@@ -37,7 +37,7 @@ object GameManager {
     }
 
     fun addScore(listWinners: List<String>, listLosers: List<String>, pointsToAdd: Int) {
-        val multiplier = if(currentGame?.listPlayers?.size == 4) 3 else 2        
+        val multiplier = if(currentGame?.listPlayers?.size == 4) 3 else 2
         currentTurn?.apply {
             listScore.apply {
                 val scoreList = mutableListOf<Score>()
@@ -92,6 +92,7 @@ object GameManager {
     }
 }
 
+/*
 fun deroulement() {
     GameManager.startGame(listOf("kevin", "lerna", "bruno"))
     GameManager.startTurn(TypeDePrise.GARDE.value, "bruno")
@@ -121,4 +122,4 @@ fun deroulement() {
     listTotalOfScores = GameManager.retrieveListOfScores()
     //TODO display this list
 
-}
+}*/

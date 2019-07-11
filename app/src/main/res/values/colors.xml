@@ -6,8 +6,9 @@
     <color name="colorBlack">#80000000</color>
     <color name="colorJaune">#fff6ba</color>
     <color name="colorBleu">#104478</color>
-    <color name="colorBlanc">#FFF</color>
+    <color name="colorBlancTransparent">#CCFFFFFF</color>
     <color name="colorAlpha">#7A262B2B</color>
+    <color name="colorFondTransparent">#50FFFFFF</color>
 
 
 </resources>

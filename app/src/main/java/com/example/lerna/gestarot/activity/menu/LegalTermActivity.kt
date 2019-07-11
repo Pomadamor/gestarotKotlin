@@ -2,6 +2,7 @@ package com.example.lerna.gestarot.activity.menu
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.lerna.gestarot.R
 
 class LegalTermActivity : AppCompatActivity() {
 

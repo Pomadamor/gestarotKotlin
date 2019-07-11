@@ -10,6 +10,7 @@ import com.vicpin.krealmextensions.deleteAll
 import com.vicpin.krealmextensions.save
 import kotlinx.android.synthetic.main.activity_connect.*
 
+
 class ConnectActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
